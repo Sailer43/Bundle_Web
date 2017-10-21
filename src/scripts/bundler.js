@@ -9,6 +9,7 @@ $(function() {
         $("#secondPart").toggle(500);
         $("#firstPart").toggle(500);
     }
+    
     $("#backButton").on("click", function() {
        changeView();
     });
