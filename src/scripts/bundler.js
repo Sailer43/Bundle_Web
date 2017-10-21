@@ -1,9 +1,9 @@
 $(function() {
 
     let liString = `<li>
-        Item:<input class="item">
-        <p>Quantity:<input class="count"></p>
-      </li>`;
+            Item:<input class="item">
+            <p>Quantity:<input class="count"></p>
+        </li>`;
 
     function changeView() {
         $("#secondPart").toggle(500);
