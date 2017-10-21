@@ -1,5 +1,9 @@
-body
-{
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}
+body {
+    min-height: 75rem;
+  }
+  #bundleList{
+      list-style-type: none;
+  }
+  .item{
+      padding-block-start: 20px;
+  }

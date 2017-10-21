@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style>
+			.hide{
+				display: none
+			}
+			.scroll-pane
+			{
+			width: 100%;
+				height: 200px;
+				overflow: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="firstView">
+			<!-- <p>this div is for the search bar</p> -->
+			Search Bundle by Name: <input id = search bar>
+			<button id="searchBtn">Search</button>
+		</div>
+
+		<div class="hide firstView">
+			<!-- this div is for the second part -->
+			<h3><p id="itemName"></p></h3>
+			<div>
+				<p id="itemNum"></p>
+			</div>
+			<div>
+				<!-- this is for displaying photos and other items -->
+				<div class="scroll-pane">
+					<div class="product">
+						<p><img src="images/images.jpeg" target-id=1></p>
+						<button class="addOne" target-id=1>+</button>
+						some price here
+						<button class="addOne" target-id=1>+</button>
+					</div>
+					<div class="product">
+						<p><img src="images/images.jpeg" target-id=1></p>
+						<button class="addOne" target-id=1>+</button>
+						some price here
+						<button class="addOne" target-id=1>+</button>
+					</div>
+					<div class="product">
+						<p><img src="images/images.jpeg" target-id=1></p>
+						<button class="addOne" target-id=1>+</button>
+						some price here
+						<button class="addOne" target-id=1>+</button>
+					</div>
+
+				</div>
+			</div>
+			<div>
+				<button id="nextButton">Prev</button>
+				<button id="prevButton">Next</button>
+				<button id="doneButton">Done</button>
+			</div>
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="scripts/bundlee.js"></script>
+		<!-- <script src="bower_components/mustache.js"></script> -->
+	</body>
+</html>
