@@ -10,9 +10,13 @@
 		.hide {
 			display: none
 		}
+		.scroll-pane {
+			width: 100%;
+			height: 720px;
+			overflow: auto;
+		}
 	</style>
 	<body>
-		<h1>Build Your Bundle</h1>
 		
 		<div class="" id="firstPart">
 			<!-- <p>Here is where lable and first textarea</p> -->
@@ -36,27 +40,26 @@
 		</div>
 		
 		<main role="main" class="container">
-			<div class="jumbotron">
-			<!-- <p>Here is where lable and first textarea</p> -->
-			<h1>Build Your Bundle</h1>
+			<div class="jumbotron" id="firstPart">
+				<!-- <p>Here is where lable and first textarea</p> -->
+				<h1>Build Your Bundle</h1>
 				<p>Bundle Name</p>
 				<input class="" id = "BundleName"></input>
 				<button id="confirmButton">confirm</button>
-		</div>
+			</div>
 		<div class="hide" id = "secondPart">
 			<!-- <p>
 				This div is for the second part of the page
 			</p> -->
 			<div class="">
-				<ul id="bundleList">
-					<li>
-						Item:<input class="item">
-				<ul style=list-style-type:none id="bundleList">
-					<li>
-						<p>Item:<input class="item"></p>
-						<p>Quantity:<input class="count"></p>
-					</li>
-				</ul>
+				<div class="scroll-pane">
+					<ul style=list-style-type:none id="bundleList">
+						<li>
+							<p>Item: <input class="item"></p>
+							<p>Quantity: <input class="count"></p>
+						</li>	
+					</ul>
+				</div>
 			</div>
 
 			<div class="">
