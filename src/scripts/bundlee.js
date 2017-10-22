@@ -8,4 +8,7 @@ $(function()
     $('#searchBtn').on('click', function() {
         changeView();
     })
+    document.addEventListener('amazonPlatformReady', function () {
+        //API code goes here
+      });      
 });
