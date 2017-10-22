@@ -1,9 +1,10 @@
 $(function() {
 
+    var listCounter = 1;
     let liString = `<li>
-        Item:<input class="item">
+        <p>Item:<input class="item"></p>
         <p>Quantity:<input class="count"></p>
-      </li>`;
+    </li>`;
 
     function changeView() {
         $("#secondPart").toggle(500);
@@ -28,9 +29,13 @@ $(function() {
     
     $("#addButton").on("click", function() {
         $("#bundleList").append(liString);
+        listCounter ++;
     });
 
     $("#removeButton").on("click", function() {
         $("#bundleList").children().last().remove();
+        if (listCounter > 0) {
+            listCounter --;
+        }
     })
 });
