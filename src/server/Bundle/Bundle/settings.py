@@ -120,6 +120,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 INSTALLED_APPS = [
+    # 'boundler.apps.BoundlerConfig',
     'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
